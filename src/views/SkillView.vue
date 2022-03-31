@@ -11,7 +11,7 @@
                             <ol class="webSkills">
                                 <h3>Web Development Skills</h3>                       
                             <li v-for="skill in hard" :key=skill>
-                                <img :src="'../assets/icons/skillTree_icon_' + `${skill.img}`"  :alt="`${skill.skillName}` +' icon'" class="icon">
+                                <img :src="skill.img"  :alt="`${skill.skillName}` +' icon'" class="icon">
                                 <div>{{ skill.skillName }}</div>
                             </li>
                             </ol>
@@ -19,7 +19,7 @@
                             <ol class="furtherSkills">
                                 <h3>Further Skills</h3>
                             <li v-for="skill in skills" :key=skill>
-                                <img :src="'../assets/icons/skillTree_icon_' + `${skill.img}`"  :alt="`${skill.skillName}` +' icon'" class="icon">
+                                <img :src="skill.img"  :alt="`${skill.skillName}` +' icon'" class="icon">
                                 <div>{{ skill.skillName }}</div>
                             </li>
                             </ol>
@@ -31,7 +31,7 @@
                         <h2>Soft Skills</h2>
                         <ul class="softSkills">
                             <li v-for="skill in soft" :key=skill>
-                                <img :src="'../assets/icons/skillTree_icon_' + `${skill.img}`"  :alt="`${skill.skillName}` +' icon'" class="icon">
+                                <img :src="skill.img"  :alt="`${skill.skillName}` +' icon'" class="icon">
                                 <div>{{ skill.skillName }}</div>
                             </li>
                         </ul>
@@ -55,71 +55,71 @@ export default {
     return {
        hard: [
                 {
-                    img: "html.png",
+                    img: '../src/assets/img/icons/skillTree_icon_html.png',
                     skillName: "HTML"
                 },
                 {
-                    img: "css.png",
+                    img:'../src/assets/img/icons/skillTree_icon_css.png',
                     skillName: "CSS"
                 },
                 {
-                    img: "javascript.png",
+                    img:'../src/assets/img/icons/skillTree_icon_javascript.png',
                     skillName: "Javascript"
                 },
                 {
-                    img: "react.png",
+                    img:'../src/assets/img/icons/skillTree_icon_react.png',
                     skillName: "REACT"
                 },
                 {
-                    img: "sass.png",
+                    img:'../src/assets/img/icons/skillTree_icon_sass.png',
                     skillName: "SASS"
                 },
                 {
-                    img: "vue.png",
+                    img:'../src/assets/img/icons/skillTree_icon_vue.png',
                     skillName: "VUE"
                 }
-            ],
+            ] ,
             skills: [
                 {
-                    img: "photoshop.png",
+                    img: '../src/assets/img/icons/skillTree_icon_photoshop.png',
                     skillName: "Photoshop"
                 },
                 {
-                    img: "unity.png",
+                    img: '../src/assets/img/icons/skillTree_icon_unity.png',
                     skillName: "Unity 3D"
                 },
                 {
-                    img: "maya.png",
+                    img: '../src/assets/img/icons/skillTree_icon_maya.png',
                     skillName: "Maya 3D"
                 },
                 {
-                    img: "unreal.png",
+                    img: '../src/assets/img/icons/skillTree_icon_unreal.png',
                     skillName: "Unreal Engine"
                 },
                 {
-                    img: "csharp.png",
+                    img: '../src/assets/img/icons/skillTree_icon_csharp.png',
                     skillName: "CSharp"
                 }
             ],
             soft: [
                 {
-                    img: "teamplayer.png",
+                    img: '../src/assets/img/icons/skillTree_icon_teamplayer.png',
                     skillName: "Teamplayer"
                 },
                 {
-                    img: "reliable.png",
+                    img: '../src/assets/img/icons/skillTree_icon_reliable.png',
                     skillName: "Reliable"
                 },
                 {
-                    img: "ontime.png",
+                    img: '../src/assets/img/icons/skillTree_icon_ontime.png',
                     skillName: "On Time"
                 },
                 {
-                    img: "creative.png",
+                    img: '../src/assets/img/icons/skillTree_icon_creative.png',
                     skillName: "Creative"
                 },
                 {
-                    img: "motivated.png",
+                    img: '../src/assets/img/icons/skillTree_icon_motivated.png',
                     skillName: "Motivated"
                 }
             ]
