@@ -6,13 +6,30 @@
           alt="dabergotzDesign Logo"
           class="logo"
         />
-        <router-link @click="toggleJob" id="headLink">Job Experience</router-link>
-        <a  id="headLink">Education & other Experience</a>
-        <a  id="headLink">School</a>
-        <a  id="headLink">Skills</a>
-       <!--  <a class="menu" href="javascript:void(0);" onclick="HamburgerMenu()"><i class="fas fa-bars"></i></a> -->
+        <!-- 'a' replaced by 'router-link' -->
+        <router-link to="/home"  id="headLink">Home</router-link>
+        <router-link to="/jobExp"  id="headLink">Job Experience</router-link>
+        <router-link to="/edExp" id="headLink">Education & other Experience</router-link>
+        <router-link to="/schoolExp" id="headLink">School</router-link>
+        <router-link to="/skills" id="headLink">Skills</router-link>
+       <!--  <div class="menu" href="javascript:void(0);" onclick="HamburgerMenu()"><i class="fas fa-bars"></i></div> -->
       </nav>
   </header>
-  <router-view/>
+  <router-view  :cvInventory="cvInventory" />
+
 </template>
+
+<script>
+
+import cvdata from './cvdata.json'
+
+export default {
+  data () {
+    return{  
+      cvInventory: cvdata 
+    }
+  }
+}
+</script>
+
 

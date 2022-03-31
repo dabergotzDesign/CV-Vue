@@ -1,0 +1,18 @@
+[
+    { "id": 1,  "icon": "html", "name":"HTML" },
+    { "id": 2,  "icon": "css", "name":"CSS" },
+    { "id": 3,  "icon": "javascript", "name":"Javascript" },
+    { "id": 4,  "icon": "react", "name":"React" },
+    { "id": 5,  "icon": "sass", "name":"SASS" },
+    { "id": 6,  "icon": "vue", "name":"VUE" },
+    { "id": 7,  "icon": "photoshop", "name":"Photoshop" },
+    { "id": 8,  "icon": "unity", "name":"Unity 3D" },
+    { "id": 9,  "icon": "maya", "name":"Maya 3D" },
+    { "id": 10,  "icon": "unreal", "name":"Unreal Engine" },
+    { "id": 11,  "icon": "csharp", "name":"CSharp" },
+    { "id": 12,  "icon": "teamplayer", "name":"Teamplayer" },
+    { "id": 13,  "icon": "reliable", "name":"Reliable" },
+    { "id": 14,  "icon": "ontime", "name":"On Time" },
+    { "id": 15,  "icon": "motivated", "name":"Motivated" },
+    { "id": 16,  "icon": "creative", "name":"Creative" }    
+  ]
