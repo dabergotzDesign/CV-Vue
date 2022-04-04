@@ -2,7 +2,7 @@
  <header>
     <nav class="navigation">
         <img
-          src='./assets/img/Site-Logo_transparent.png'
+          src='./assets/styles/img/Site-Logo_transparent.png'
           alt="dabergotzDesign Logo"
           class="logo"
         />
@@ -15,18 +15,20 @@
        <!--  <div class="menu" href="javascript:void(0);" onclick="HamburgerMenu()"><i class="fas fa-bars"></i></div> -->
       </nav>
   </header>
-  <router-view  :cvInventory="cvInventory" />
+  <router-view  :cvInventory="cvInventory" :cvSkill="cvSkill"/>
 
 </template>
 
 <script>
-
 import cvdata from './cvdata.json'
+import skillData from './skilldata.json'
+
 
 export default {
   data () {
     return{  
-      cvInventory: cvdata 
+      cvInventory: cvdata,
+      cvSkill: skillData 
     }
   }
 }

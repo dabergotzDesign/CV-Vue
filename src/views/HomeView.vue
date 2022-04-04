@@ -16,6 +16,7 @@
       <p>
         I am open minded, curouis for new and have a heart for the digital media.
       </p>
+      
     </div>
   </main>
   <router-view />

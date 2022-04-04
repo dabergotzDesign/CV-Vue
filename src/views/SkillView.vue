@@ -3,43 +3,13 @@
 <template>
     <div class="skillMain">
             <h1 class="jobtitle">Skills</h1>
-            
-                <div class="skillData">
-                    <div class="hardSkills">
-                        <h2>Hard Skills</h2>
-                        <ul class="hardSkills">
-                            <ol class="webSkills">
-                                <h3>Web Development Skills</h3>                       
-                            <li v-for="skill in hard" :key=skill>
-                                <img :src="skill.img"  :alt="`${skill.skillName}` +' icon'" class="icon">
-                                <div>{{ skill.skillName }}</div>
-                            </li>
-                            </ol>
-                           
-                            <ol class="furtherSkills">
-                                <h3>Further Skills</h3>
-                            <li v-for="skill in skills" :key=skill>
-                                <img :src="skill.img"  :alt="`${skill.skillName}` +' icon'" class="icon">
-                                <div>{{ skill.skillName }}</div>
-                            </li>
-                            </ol>
-                            
-                        </ul>
-                    </div>
 
-                    <div class="softSkills">
-                        <h2>Soft Skills</h2>
-                        <ul class="softSkills">
-                            <li v-for="skill in soft" :key=skill>
-                                <img :src="skill.img"  :alt="`${skill.skillName}` +' icon'" class="icon">
-                                <div>{{ skill.skillName }}</div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-     
-   
+
+            <SkillTree
+            :cvSkill="cvSkill"
+            :key="index"
+            :index="index"
+            />
 
         </div>
 </template>
@@ -48,6 +18,7 @@ import SkillTree from '@/components/SkillTree.vue'
 
 export default {
  name: 'skills',
+ props: ['cvSkill', 'index'],
  components: {
     SkillTree
  },
@@ -55,72 +26,72 @@ export default {
     return {
        hard: [
                 {
-                    img: '../src/assets/img/icons/skillTree_icon_html.png',
-                    skillName: "HTML"
+                    img:'../src/assets/styles/img/icons/skillTree_icon_html.png',
+                    alt: "HTML"
                 },
                 {
-                    img:'../src/assets/img/icons/skillTree_icon_css.png',
-                    skillName: "CSS"
+                    img:'../src/assets/styles/img/icons/skillTree_icon_css.png',
+                    alt: "CSS"
                 },
                 {
-                    img:'../src/assets/img/icons/skillTree_icon_javascript.png',
-                    skillName: "Javascript"
+                    img:'../src/assets/styles/img/icons/skillTree_icon_javascript.png',
+                    alt: "Javascript"
                 },
                 {
-                    img:'../src/assets/img/icons/skillTree_icon_react.png',
-                    skillName: "REACT"
+                    img:'../src/assets/styles/img/icons/skillTree_icon_react.png',
+                    alt: "REACT"
                 },
                 {
-                    img:'../src/assets/img/icons/skillTree_icon_sass.png',
-                    skillName: "SASS"
+                    img:'../src/assets/styles/img/icons/skillTree_icon_sass.png',
+                    alt: "SASS"
                 },
                 {
-                    img:'../src/assets/img/icons/skillTree_icon_vue.png',
-                    skillName: "VUE"
+                    img:'../src/assets/styles/img/icons/skillTree_icon_vue.png',
+                    alt: "VUE"
                 }
             ] ,
             skills: [
-                {
-                    img: '../src/assets/img/icons/skillTree_icon_photoshop.png',
-                    skillName: "Photoshop"
+                { 
+                    img: '../src/assets/styles/img/icons/skillTree_icon_photoshop.png',
+                    alt: "Photoshop"
                 },
                 {
-                    img: '../src/assets/img/icons/skillTree_icon_unity.png',
-                    skillName: "Unity 3D"
+                    img: '../src/assets/styles/img/icons/skillTree_icon_unity.png',
+                    alt: "Unity 3D"
                 },
                 {
-                    img: '../src/assets/img/icons/skillTree_icon_maya.png',
-                    skillName: "Maya 3D"
+                    img: '../src/assets/styles/img/icons/skillTree_icon_maya.png',
+                    alt: "Maya 3D"
                 },
                 {
-                    img: '../src/assets/img/icons/skillTree_icon_unreal.png',
-                    skillName: "Unreal Engine"
+                    img: '../src/assets/styles/img/icons/skillTree_icon_unreal.png',
+                    alt: "Unreal Engine"
                 },
                 {
-                    img: '../src/assets/img/icons/skillTree_icon_csharp.png',
-                    skillName: "CSharp"
+                    img: '../src/assets/styles/img/icons/skillTree_icon_csharp.png',
+                    alt: "CSharp"
                 }
             ],
             soft: [
                 {
-                    img: '../src/assets/img/icons/skillTree_icon_teamplayer.png',
-                    skillName: "Teamplayer"
+                    img: '../src/assets/styles/img/icons/skillTree_icon_teamplayer.png',
+                    alt: "Teamplayer"
                 },
                 {
-                    img: '../src/assets/img/icons/skillTree_icon_reliable.png',
-                    skillName: "Reliable"
+                    img: '../src/assets/styles/img/icons/skillTree_icon_reliable.png',
+                    alt: "Reliable"
                 },
                 {
-                    img: '../src/assets/img/icons/skillTree_icon_ontime.png',
-                    skillName: "On Time"
+                    img: '../src/assets/styles/img/icons/skillTree_icon_ontime.png',
+                    alt: "On Time"
                 },
                 {
-                    img: '../src/assets/img/icons/skillTree_icon_creative.png',
-                    skillName: "Creative"
+                    img: '../src/assets/styles/img/icons/skillTree_icon_motivated.png',
+                    alt: "Motivated"
                 },
                 {
-                    img: '../src/assets/img/icons/skillTree_icon_motivated.png',
-                    skillName: "Motivated"
+                    img: '../src/assets/styles/img/icons/skillTree_icon_creative.png',
+                    alt: "Creative"
                 }
             ]
     }
