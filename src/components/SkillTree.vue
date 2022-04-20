@@ -15,9 +15,29 @@
                             <ol class="furtherSkills">
                                 <h3>Further Skills</h3>
                                 
-                            <li v-for="(skill, index) in cvSkill.slice(0,5) " :key="index">
-                                <FontAwesome  :icon="[`${cvSkill[index+6].short}`,`${cvSkill[index+6].icon}`]" class="icon"/>
-                                <div>{{ cvSkill[index+6].name }}</div>
+                            <li>
+                                <img src="@\assets\styles\img\skillTree_icon_photoshop.png" alt="photoshop icon" class="icon"/>
+                                <div>Photoshop</div>
+                            </li>
+
+                            <li>
+                                <img src="@\assets\styles\img\skillTree_icon_maya.png" alt="autodesk maya 3d icon" class="icon"/>
+                                <div>Maya 3D</div>
+                            </li>
+
+                            <li>
+                                <img src="@\assets\styles\img\skillTree_icon_unity.png" alt="unity 3d icon" class="icon"/>
+                                <div>Unity 3D</div>
+                            </li>
+
+                            <li>
+                                <img src="@\assets\styles\img\skillTree_icon_unreal.png" alt="unreal engine icon" class="icon"/>
+                                <div>Unreal Engine</div>
+                            </li>
+
+                            <li>
+                                <img src="@\assets\styles\img\skillTree_icon_csharp.png" alt="csharp icon" class="icon"/>
+                                <div>Csharp</div>
                             </li>
 
                             </ol>
@@ -31,7 +51,7 @@
                         <ul class="softSkills">
                             <h3>_</h3>
                             <li v-for="(soft, index) in cvSkill.slice(0,5) " :key="index">
-                                <FontAwesome  :icon="['fas', `${cvSkill[index + 11].icon}`]" class="icon"/>
+                                <FontAwesome  :icon="['fas', `${cvSkill[index + 11].icon}`]" class="softIcon"/>
                                 <div>{{ cvSkill[index + 11].name }}</div>
                             </li>
                         </ul>

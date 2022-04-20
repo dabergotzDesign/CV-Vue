@@ -30,6 +30,21 @@ export default {
       cvInventory: cvdata,
       cvSkill: skillData 
     }
+  },
+  mounted(){
+    window.addEventListener('scroll', this.onScroll)
+    this.lastScrollPosition = window.pageYOffset
+  },
+  methods:{
+    onScroll(){
+      if(window.pageYOffset <= 0){
+        document.querySelector('.navigation').style.background= 'rgba(20,20,20,0.5)'
+      }
+      if(window.pageYOffset > 0){
+        document.querySelector('.navigation').style.background= 'rgba(20,20,20,1)'
+      }
+      this.lastScrollPosition = window.pageYOffset
+    }
   }
 }
 </script>
